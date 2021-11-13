@@ -2,8 +2,9 @@ package domain;
 
 public class LikesInfo {
     private int count;
-    private boolean canLike;
-    private boolean isLiked;
+    private int canLike;
+    private int userLikes;
+    private int canPublish;
 
     public int getCount() {
         return count;
@@ -13,20 +14,27 @@ public class LikesInfo {
         this.count = count;
     }
 
-    public boolean isCanLike() {
+    public int getCanLike() {
         return canLike;
     }
 
-    public void setCanLike(boolean canLike) {
+    public void setCanLike(int canLike) {
         this.canLike = canLike;
     }
 
-    public boolean isLiked() {
-        return isLiked;
+    public int getUserLikes() {
+        return userLikes;
     }
 
-    public void setLiked(boolean liked) {
-        isLiked = liked;
+    public void setUserLikes(int userLikes) {
+        this.userLikes = userLikes;
     }
 
+    public int getCanPublish() {
+        return canPublish;
+    }
+
+    public void setCanPublish(int canPublish) {
+        this.canPublish = canPublish;
+    }
 }
